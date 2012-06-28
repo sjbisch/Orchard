@@ -1,0 +1,50 @@
+﻿@using Orchard.Utility.Extensions;
+@using Orchard.ContentManagement;
+
+
+@{
+
+    Script.Require("JQueryUI_Core");
+    Script.Require("JQueryUI_Dialog");
+    Style.Require("jQueryUI_Orchard");
+    var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
+
+
+    Style.Require("AudioPlaylist");
+    Script.Require("JPlayer");
+    Script.Require("AudioPlaylist");
+
+    var items = Model.List.Items;
+    int index = 0;
+}
+
+
+<div id="audiocontainer">
+    <div id="jquery_jplayer" style="position: absolute; top: 0px; left: -9999px; "></div>
+    <a id="playbutton" href="#">Play</a>
+
+
+    <div id="jplayer_playlist" class="jp-playlist">
+	    <ul>
+
+        @foreach (var item in items)
+        {
+            <li>
+                <a href="#" id="jplayer_playlist_item_@index" class="jplayer_playlist_item"
+                    data-index="@index"
+                    data-mp3_file="@item.ContentItem.Parts[6].Fields[0].Value" 
+                    data-ogg_file="@item.ContentItem.Parts[6].Fields[1].Value">@item.ContentItem.TitlePart.Title</a>
+
+                <span class="audiolinks">
+                    <div class="lyricsdiv" style="display:none;">@Html.Raw(item.ContentItem.BodyPart.Text)</div>
+                    <a href="#" class="lyricslink">Lyrics</a>
+                    <a href="@item.ContentItem.Parts[6].Fields[0].Value" title="right click and select 'Save As' to download">Download</a>
+                </span>
+            </li>
+            index = index + 1;
+        }
+        </ul>
+    </div>
+</div>
+
+

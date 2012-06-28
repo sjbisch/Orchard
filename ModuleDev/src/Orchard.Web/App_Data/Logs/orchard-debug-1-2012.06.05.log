@@ -1,0 +1,246 @@
+2012-06-05 07:39:08,320 [35] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2012-06-05 07:39:08,422 [35] NHibernate.Util.ADOExceptionReporter - The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+2012-06-05 07:39:08,442 [35] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-06-05 07:39:08,443 [35] NHibernate.Util.ADOExceptionReporter - The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+2012-06-05 07:39:08,443 [35] Orchard.Alias.Implementation.Updater.AliasHolderUpdater - Exception during Alias refresh
+NHibernate.ADOException: could not execute query
+[ SELECT this_.Id as Id17_0_, this_.Path as Path17_0_, this_.RouteValues as RouteVal3_17_0_, this_.Source as Source17_0_, this_.Action_id as Action5_17_0_ FROM Orchard_Alias_AliasRecord this_ ORDER BY this_.Id asc ]
+[SQL: SELECT this_.Id as Id17_0_, this_.Path as Path17_0_, this_.RouteValues as RouteVal3_17_0_, this_.Source as Source17_0_, this_.Action_id as Action5_17_0_ FROM Orchard_Alias_AliasRecord this_ ORDER BY this_.Id asc] ---> System.Data.SqlServerCe.SqlCeException: The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at NHibernate.Linq.CriteriaResultReader`1.List()
+   at NHibernate.Linq.CriteriaResultReader`1.<GetEnumerator>d__0.MoveNext()
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Orchard.Alias.Implementation.Storage.AliasStorage.List()
+   at Orchard.Alias.Implementation.Updater.AliasHolderUpdater.Refresh()
+2012-06-05 07:39:09,551 [35] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2012-06-05 07:39:09,551 [35] NHibernate.Util.ADOExceptionReporter - The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+2012-06-05 07:39:09,551 [35] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-06-05 07:39:09,551 [35] NHibernate.Util.ADOExceptionReporter - The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+2012-06-05 07:39:09,551 [35] Orchard.Tasks.BackgroundService - Error while processing background task
+NHibernate.ADOException: could not execute query
+[ SELECT this_.Id as Id18_0_, this_.TaskType as TaskType18_0_, this_.ScheduledUtc as Schedule3_18_0_, this_.ContentItemVersionRecord_id as ContentI4_18_0_ FROM Scheduling_ScheduledTaskRecord this_ WHERE this_.ScheduledUtc <= ? ]
+Positional parameters:  #0>6/5/2012 11:39:09 AM
+[SQL: SELECT this_.Id as Id18_0_, this_.TaskType as TaskType18_0_, this_.ScheduledUtc as Schedule3_18_0_, this_.ContentItemVersionRecord_id as ContentI4_18_0_ FROM Scheduling_ScheduledTaskRecord this_ WHERE this_.ScheduledUtc <= ?] ---> System.Data.SqlServerCe.SqlCeException: The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List()
+   at NHibernate.Linq.CriteriaResultReader`1.List()
+   at NHibernate.Linq.CriteriaResultReader`1.<GetEnumerator>d__0.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Orchard.Utility.Extensions.ReadOnlyCollectionExtensions.ToReadOnlyCollection[T](IEnumerable`1 enumerable) in d:\dev\Orchard\ModuleDev\src\Orchard\Utility\Extensions\ReadOnlyCollectionExtensions.cs:line 8
+   at Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Fetch(Expression`1 predicate) in d:\dev\Orchard\ModuleDev\src\Orchard\Data\Repository.cs:line 72
+   at Orchard.Core.Scheduling.Services.ScheduledTaskExecutor.Sweep() in d:\dev\Orchard\ModuleDev\src\Orchard.Web\Core\Scheduling\Services\ScheduledTaskExecutor.cs:line 36
+   at Orchard.Tasks.BackgroundService.Sweep() in d:\dev\Orchard\ModuleDev\src\Orchard\Tasks\BackgroundService.cs:line 31
+2012-06-05 07:39:10,399 [35] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2012-06-05 07:39:10,399 [35] NHibernate.Util.ADOExceptionReporter - The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+2012-06-05 07:39:10,399 [35] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-06-05 07:39:10,399 [35] NHibernate.Util.ADOExceptionReporter - The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+2012-06-05 07:39:10,399 [35] Orchard.Tasks.BackgroundService - Error while processing background task
+NHibernate.ADOException: could not execute query
+[ SELECT this_.Id as Id64_4_, this_.Number as Number64_4_, this_.Published as Published64_4_, this_.Latest as Latest64_4_, this_.Data as Data64_4_, this_.ContentItemRecord_id as ContentI6_64_4_, titlepartr3_.Id as Id62_0_, titlepartr3_.Title as Title62_0_, titlepartr3_.ContentItemRecord_id as ContentI3_62_0_, contentite1_.Id as Id63_1_, contentite1_.Data as Data63_1_, contentite1_.ContentType_id as ContentT3_63_1_, blogpartre2_.Id as Id29_2_, blogpartre2_.Description as Descript2_29_2_, blogpartre2_.PostCount as PostCount29_2_, contenttyp8_.Id as Id65_3_, contenttyp8_.Name as Name65_3_ FROM Orchard_Framework_ContentItemVersionRecord this_ inner join Title_TitlePartRecord titlepartr3_ on this_.Id=titlepartr3_.Id inner join Orchard_Framework_ContentItemRecord contentite1_ on this_.ContentItemRecord_id=contentite1_.Id inner join Orchard_Blogs_BlogPartRecord blogpartre2_ on contentite1_.Id=blogpartre2_.Id left outer join Orchard_Framework_ContentTypeRecord contenttyp8_ on contentite1_.ContentType_id=contenttyp8_.Id WHERE this_.Published = ? ORDER BY titlepartr3_.Title asc ]
+Positional parameters:  #0>True
+[SQL: SELECT this_.Id as Id64_4_, this_.Number as Number64_4_, this_.Published as Published64_4_, this_.Latest as Latest64_4_, this_.Data as Data64_4_, this_.ContentItemRecord_id as ContentI6_64_4_, titlepartr3_.Id as Id62_0_, titlepartr3_.Title as Title62_0_, titlepartr3_.ContentItemRecord_id as ContentI3_62_0_, contentite1_.Id as Id63_1_, contentite1_.Data as Data63_1_, contentite1_.ContentType_id as ContentT3_63_1_, blogpartre2_.Id as Id29_2_, blogpartre2_.Description as Descript2_29_2_, blogpartre2_.PostCount as PostCount29_2_, contenttyp8_.Id as Id65_3_, contenttyp8_.Name as Name65_3_ FROM Orchard_Framework_ContentItemVersionRecord this_ inner join Title_TitlePartRecord titlepartr3_ on this_.Id=titlepartr3_.Id inner join Orchard_Framework_ContentItemRecord contentite1_ on this_.ContentItemRecord_id=contentite1_.Id inner join Orchard_Blogs_BlogPartRecord blogpartre2_ on contentite1_.Id=blogpartre2_.Id left outer join Orchard_Framework_ContentTypeRecord contenttyp8_ on contentite1_.ContentType_id=contenttyp8_.Id WHERE this_.Published = ? ORDER BY titlepartr3_.Title asc] ---> System.Data.SqlServerCe.SqlCeException: The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List[T]()
+   at Orchard.ContentManagement.DefaultContentQuery.Slice(Int32 skip, Int32 count) in d:\dev\Orchard\ModuleDev\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 146
+   at Orchard.ContentManagement.DefaultContentQuery.ContentQuery`1.Orchard.ContentManagement.IContentQuery<T>.List() in d:\dev\Orchard\ModuleDev\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 191
+   at Orchard.Blogs.Services.BlogService.Get(VersionOptions versionOptions)
+   at Orchard.Blogs.Services.BlogService.Get()
+   at Orchard.Blogs.Routing.BlogPathConstraintUpdator.Refresh()
+   at Orchard.Blogs.Routing.BlogPathConstraintUpdator.Orchard.Tasks.IBackgroundTask.Sweep()
+   at Orchard.Tasks.BackgroundService.Sweep() in d:\dev\Orchard\ModuleDev\src\Orchard\Tasks\BackgroundService.cs:line 31
+2012-06-05 07:39:10,599 [35] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2012-06-05 07:39:10,599 [35] NHibernate.Util.ADOExceptionReporter - The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+2012-06-05 07:39:10,599 [35] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-06-05 07:39:10,599 [35] NHibernate.Util.ADOExceptionReporter - The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+2012-06-05 07:39:10,626 [35] Orchard.Tasks.BackgroundService - Error while processing background task
+NHibernate.ADOException: could not execute query
+[ SELECT this_.Id as Id64_3_, this_.Number as Number64_3_, this_.Published as Published64_3_, this_.Latest as Latest64_3_, this_.Data as Data64_3_, this_.ContentItemRecord_id as ContentI6_64_3_, contentite1_.Id as Id63_0_, contentite1_.Data as Data63_0_, contentite1_.ContentType_id as ContentT3_63_0_, sitesettin4_.Id as Id6_1_, sitesettin4_.SiteSalt as SiteSalt6_1_, sitesettin4_.SiteName as SiteName6_1_, sitesettin4_.SuperUser as SuperUser6_1_, sitesettin4_.PageTitleSeparator as PageTitl5_6_1_, sitesettin4_.HomePage as HomePage6_1_, sitesettin4_.SiteCulture as SiteCult7_6_1_, sitesettin4_.ResourceDebugMode as Resource8_6_1_, sitesettin4_.PageSize as PageSize6_1_, sitesettin4_.SiteTimeZone as SiteTim10_6_1_, contenttyp5_.Id as Id65_2_, contenttyp5_.Name as Name65_2_ FROM Orchard_Framework_ContentItemVersionRecord this_ inner join Orchard_Framework_ContentItemRecord contentite1_ on this_.ContentItemRecord_id=contentite1_.Id left outer join Settings_SiteSettingsPartRecord sitesettin4_ on contentite1_.Id=sitesettin4_.Id left outer join Orchard_Framework_ContentTypeRecord contenttyp5_ on contentite1_.ContentType_id=contenttyp5_.Id WHERE contentite1_.Id = ? and this_.Published = ? ]
+Positional parameters:  #0>1 #1>True
+[SQL: SELECT this_.Id as Id64_3_, this_.Number as Number64_3_, this_.Published as Published64_3_, this_.Latest as Latest64_3_, this_.Data as Data64_3_, this_.ContentItemRecord_id as ContentI6_64_3_, contentite1_.Id as Id63_0_, contentite1_.Data as Data63_0_, contentite1_.ContentType_id as ContentT3_63_0_, sitesettin4_.Id as Id6_1_, sitesettin4_.SiteSalt as SiteSalt6_1_, sitesettin4_.SiteName as SiteName6_1_, sitesettin4_.SuperUser as SuperUser6_1_, sitesettin4_.PageTitleSeparator as PageTitl5_6_1_, sitesettin4_.HomePage as HomePage6_1_, sitesettin4_.SiteCulture as SiteCult7_6_1_, sitesettin4_.ResourceDebugMode as Resource8_6_1_, sitesettin4_.PageSize as PageSize6_1_, sitesettin4_.SiteTimeZone as SiteTim10_6_1_, contenttyp5_.Id as Id65_2_, contenttyp5_.Name as Name65_2_ FROM Orchard_Framework_ContentItemVersionRecord this_ inner join Orchard_Framework_ContentItemRecord contentite1_ on this_.ContentItemRecord_id=contentite1_.Id left outer join Settings_SiteSettingsPartRecord sitesettin4_ on contentite1_.Id=sitesettin4_.Id left outer join Orchard_Framework_ContentTypeRecord contenttyp5_ on contentite1_.ContentType_id=contenttyp5_.Id WHERE contentite1_.Id = ? and this_.Published = ?] ---> System.Data.SqlServerCe.SqlCeException: The database file cannot be found. Check the path to the database. [ Data Source = D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\Sites\Default\Orchard.sdf ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- End of inner exception stack trace ---
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   at NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   at NHibernate.Loader.Criteria.CriteriaLoader.List(ISessionImplementor session)
+   at NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   at NHibernate.Impl.CriteriaImpl.List(IList results)
+   at NHibernate.Impl.CriteriaImpl.List[T]()
+   at Orchard.ContentManagement.DefaultContentManager.GetManyImplementation(QueryHints hints, Action`2 predicate) in d:\dev\Orchard\ModuleDev\src\Orchard\ContentManagement\DefaultContentManager.cs:line 319
+   at Orchard.ContentManagement.DefaultContentManager.Get(Int32 id, VersionOptions options, QueryHints hints) in d:\dev\Orchard\ModuleDev\src\Orchard\ContentManagement\DefaultContentManager.cs:line 140
+   at Orchard.ContentManagement.ContentGetExtensions.Get[T](IContentManager manager, Int32 id, VersionOptions options, QueryHints hints) in d:\dev\Orchard\ModuleDev\src\Orchard\ContentManagement\ContentExtensions.cs:line 160
+   at Orchard.Core.Settings.Services.SiteService.GetSiteSettings() in d:\dev\Orchard\ModuleDev\src\Orchard.Web\Core\Settings\Services\SiteService.cs:line 46
+   at Orchard.Settings.CurrentSiteWorkContext.Get[T](String name) in d:\dev\Orchard\ModuleDev\src\Orchard\Settings\CurrentSiteWorkContext.cs:line 13
+   at Orchard.Environment.WorkContextImplementation.<>c__DisplayClass7`1.<FindResolverForState>b__2(IWorkContextStateProvider wcsp) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\WorkContextImplementation.cs:line 32
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Orchard.Environment.WorkContextImplementation.FindResolverForState[T](String name) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\WorkContextImplementation.cs:line 32
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.WorkContextImplementation.GetState[T](String name) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\WorkContextImplementation.cs:line 27
+   at Orchard.WorkContext.get_CurrentSite() in d:\dev\Orchard\ModuleDev\src\Orchard\WorkContext.cs:line 52
+   at Orchard.Warmup.Services.WarmupTask.Sweep()
+   at Orchard.Tasks.BackgroundService.Sweep() in d:\dev\Orchard\ModuleDev\src\Orchard\Tasks\BackgroundService.cs:line 31
+2012-06-05 07:40:19,282 [10] Orchard.Environment.ShellBuilders.ShellContextFactory - No shell settings available. Creating shell context for setup
+2012-06-05 07:41:19,408 [11] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT this_.Id as Id11_0_, this_.SerialNumber as SerialNu2_11_0_ FROM Settings_ShellDescriptorRecord this_ WHERE 1=1
+System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-06-05 07:41:19,436 [11] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2012-06-05 07:41:19,437 [11] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-06-05 07:41:19,498 [11] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-06-05 07:41:19,498 [11] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-06-05 07:41:22,415 [11] Orchard.Environment.ShellBuilders.ShellContextFactory - No shell settings available. Creating shell context for setup
+2012-06-05 07:41:32,062 [11] Orchard.FileSystems.AppData.AppDataFolder - Could not delete recipe execution folder D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\RecipeQueue\66c54402526741d49392be545f0db5fb under "App_Data" folder

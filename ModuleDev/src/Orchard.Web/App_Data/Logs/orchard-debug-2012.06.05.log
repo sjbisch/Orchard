@@ -1,0 +1,37 @@
+2012-06-05 07:32:23,336 [17] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "haverchuck.playlist"
+2012-06-05 08:17:52,130 [10] Orchard.Environment.ShellBuilders.ShellContextFactory - No shell settings available. Creating shell context for setup
+2012-06-05 08:18:24,312 [12] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT this_.Id as Id11_0_, this_.SerialNumber as SerialNu2_11_0_ FROM Settings_ShellDescriptorRecord this_ WHERE 1=1
+System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-06-05 08:18:24,337 [12] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2012-06-05 08:18:24,337 [12] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-06-05 08:18:24,361 [12] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-06-05 08:18:24,362 [12] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-06-05 08:18:26,196 [12] Orchard.Environment.ShellBuilders.ShellContextFactory - No shell settings available. Creating shell context for setup
+2012-06-05 08:18:34,274 [12] Orchard.FileSystems.AppData.AppDataFolder - Could not delete recipe execution folder D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\RecipeQueue\8dbf11d169d94e0b9ca96a38f0d270d8 under "App_Data" folder
+2012-06-05 08:24:03,927 [12] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "haverchuck.playlist"

@@ -1,0 +1,4 @@
+2012-06-04 18:42:54,106 [22] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "AudioJPlayer"
+2012-06-04 20:21:08,294 [3] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "haverchuck.playlist"
+2012-06-04 20:22:12,212 [9] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "AudioPlaylist"
+2012-06-04 20:43:56,845 [17] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "haverchuck.playlist"

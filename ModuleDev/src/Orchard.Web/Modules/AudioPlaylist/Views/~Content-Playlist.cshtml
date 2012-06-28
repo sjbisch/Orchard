@@ -1,0 +1,23 @@
+﻿@using Orchard.Utility.Extensions;
+@using Orchard.ContentManagement;
+
+
+@{
+
+    Script.Require("JQueryUI_Core");
+    Script.Require("JQueryUI_Dialog");
+    var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
+
+
+    Style.Require("AudioPlaylist");
+    Script.Require("JPlayer");
+    Script.Require("AudioPlaylist");
+
+}
+<article class="content-item @contentTypeClassName">
+
+    @Display(Model.Header)
+    @Display(Model.Content)
+            
+</article>
+

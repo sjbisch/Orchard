@@ -1,0 +1,11 @@
+Name: AudioJPlayer
+Category: Media
+AntiForgery: enabled
+Author: Steve Bischof
+Website: http://orchardproject.net
+Version: 1.0
+OrchardVersion: 1.0
+Description: DA module for creating audio playlists
+Features:
+    AudioJPlayer:
+        Description: Description for feature AudioJPlayer.

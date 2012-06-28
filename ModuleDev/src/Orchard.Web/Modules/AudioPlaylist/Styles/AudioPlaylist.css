@@ -1,0 +1,19 @@
+﻿#playlistbody
+{
+	float: left;
+}
+
+#audiocontainter
+{
+	float: right;
+}
+
+.audiolinks
+{
+	float:right;
+}
+
+.jp-playlist ul
+{
+	list-style-type:none;
+}

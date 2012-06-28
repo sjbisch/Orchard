@@ -1,0 +1,137 @@
+2012-06-25 18:37:26,930 [10] Orchard.Environment.ShellBuilders.ShellContextFactory - No shell settings available. Creating shell context for setup
+2012-06-25 18:38:09,553 [14] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT this_.Id as Id11_0_, this_.SerialNumber as SerialNu2_11_0_ FROM Settings_ShellDescriptorRecord this_ WHERE 1=1
+System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-06-25 18:38:09,576 [14] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2012-06-25 18:38:09,577 [14] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-06-25 18:38:09,604 [14] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-06-25 18:38:09,604 [14] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-06-25 18:38:11,147 [14] Orchard.Environment.ShellBuilders.ShellContextFactory - No shell settings available. Creating shell context for setup
+2012-06-25 18:38:20,409 [14] Orchard.FileSystems.AppData.AppDataFolder - Could not delete recipe execution folder D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\RecipeQueue\2afcedcab0444f498a5f77e42585dc3a under "App_Data" folder
+2012-06-25 19:12:15,243 [15] Orchard.Environment.ShellBuilders.ShellContextFactory - No shell settings available. Creating shell context for setup
+2012-06-25 19:14:06,912 [14] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT this_.Id as Id11_0_, this_.SerialNumber as SerialNu2_11_0_ FROM Settings_ShellDescriptorRecord this_ WHERE 1=1
+System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-06-25 19:14:06,933 [14] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2012-06-25 19:14:06,933 [14] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-06-25 19:14:06,954 [14] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-06-25 19:14:06,954 [14] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-06-25 19:14:08,482 [14] Orchard.Environment.ShellBuilders.ShellContextFactory - No shell settings available. Creating shell context for setup
+2012-06-25 19:14:17,665 [14] Orchard.FileSystems.AppData.AppDataFolder - Could not delete recipe execution folder D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\RecipeQueue\96261590fc704d7982af52ab36729cf5 under "App_Data" folder
+2012-06-25 19:21:22,933 [14] Orchard.Environment.ShellBuilders.ShellContextFactory - No shell settings available. Creating shell context for setup
+2012-06-25 19:21:41,568 [15] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT this_.Id as Id11_0_, this_.SerialNumber as SerialNu2_11_0_ FROM Settings_ShellDescriptorRecord this_ WHERE 1=1
+System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-06-25 19:21:41,572 [15] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2012-06-25 19:21:41,572 [15] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-06-25 19:21:41,575 [15] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-06-25 19:21:41,576 [15] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-06-25 19:21:42,792 [15] Orchard.Environment.ShellBuilders.ShellContextFactory - No shell settings available. Creating shell context for setup
+2012-06-25 19:21:44,505 [15] Orchard.FileSystems.AppData.AppDataFolder - Could not delete recipe execution folder D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\RecipeQueue\c5d4766190ff4ce8a82c3d8f78a662d4 under "App_Data" folder
+2012-06-25 20:01:30,557 [5] Orchard.Environment.ShellBuilders.ShellContextFactory - No shell settings available. Creating shell context for setup
+2012-06-25 20:02:01,678 [13] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT this_.Id as Id11_0_, this_.SerialNumber as SerialNu2_11_0_ FROM Settings_ShellDescriptorRecord this_ WHERE 1=1
+System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-06-25 20:02:01,710 [13] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2012-06-25 20:02:01,710 [13] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-06-25 20:02:01,733 [13] NHibernate.Util.ADOExceptionReporter - System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   at NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   at NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   at NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2012-06-25 20:02:01,734 [13] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-06-25 20:02:03,302 [13] Orchard.Environment.ShellBuilders.ShellContextFactory - No shell settings available. Creating shell context for setup
+2012-06-25 20:02:11,496 [13] Orchard.FileSystems.AppData.AppDataFolder - Could not delete recipe execution folder D:\dev\Orchard\ModuleDev\src\Orchard.Web\App_Data\RecipeQueue\03cd4c3d319e406b87202021e3d4c13f under "App_Data" folder

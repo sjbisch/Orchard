@@ -1,0 +1,33 @@
+2012-06-04 17:27:19,257 [6] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT this_.Id as Id11_0_, this_.SerialNumber as SerialNu2_11_0_ FROM Settings_ShellDescriptorRecord this_ WHERE 1=1
+System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-06-04 17:27:19,306 [6] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-06-04 17:27:19,327 [6] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-06-04 20:05:41,005 [20] Orchard.Exceptions.DefaultExceptionPolicy - An unexpected exception was caught
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.TypeLoadException: Could not load type 'Orchard.Core.Routable.Models.RoutePart' from assembly 'Orchard.Core, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null'.
+   at haverchuck.playlist.Migrations.<Create>b__3(ContentTypeDefinitionBuilder type)
+   at Orchard.ContentManagement.MetaData.ContentDefinitionManagerExtensions.AlterTypeDefinition(IContentDefinitionManager manager, String name, Action`1 alteration) in d:\dev\Orchard\ModuleDev\src\Orchard\ContentManagement\MetaData\IContentDefinitionManager.cs:line 26
+   at haverchuck.playlist.Migrations.Create()
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Orchard.Data.Migration.DataMigrationManager.Update(String feature) in d:\dev\Orchard\ModuleDev\src\Orchard\Data\Migration\DataMigrationManager.cs:line 96
+   at Orchard.Data.Migration.DataMigrationCoordinator.Installing(Feature feature) in d:\dev\Orchard\ModuleDev\src\Orchard\Data\Migration\DataMigrationCoordinator.cs:line 26
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Orchard.Events.DefaultOrchardEventBus.TryInvokeMethod(IEventHandler eventHandler, Type interfaceType, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) in d:\dev\Orchard\ModuleDev\src\Orchard\Events\DefaultOrchardEventBus.cs:line 83
+   at Orchard.Events.DefaultOrchardEventBus.TryInvoke(IEventHandler eventHandler, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) in d:\dev\Orchard\ModuleDev\src\Orchard\Events\DefaultOrchardEventBus.cs:line 68
+   at Orchard.Events.DefaultOrchardEventBus.TryNotifyHandler(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 eventData, IEnumerable& returnValue) in d:\dev\Orchard\ModuleDev\src\Orchard\Events\DefaultOrchardEventBus.cs:line 52
+2012-06-04 20:05:44,863 [20] Orchard.Data.Migration.AutomaticDataMigrations - Could not run migrations automatically on haverchuck.playlist
+2012-06-04 20:05:45,221 [20] Orchard.Data.Migration.AutomaticDataMigrations - Could not run migrations automatically on haverchuck.playlist

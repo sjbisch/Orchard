@@ -1,0 +1,10 @@
+Name: haverchuck.playlist
+AntiForgery: enabled
+Author: Steve Bischof
+Website: http://orchardproject.net
+Version: 1.0
+OrchardVersion: 1.0
+Description: Create mp3 playlists
+Features:
+    haverchuck.playlist:
+        Description:create mp3 playlists

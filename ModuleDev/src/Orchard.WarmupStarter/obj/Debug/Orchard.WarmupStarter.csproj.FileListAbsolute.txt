@@ -1,0 +1,4 @@
+D:\dev\Orchard\ModuleDev\src\Orchard.WarmupStarter\bin\Debug\Orchard.WarmupStarter.dll
+D:\dev\Orchard\ModuleDev\src\Orchard.WarmupStarter\bin\Debug\Orchard.WarmupStarter.pdb
+D:\dev\Orchard\ModuleDev\src\Orchard.WarmupStarter\obj\Debug\Orchard.WarmupStarter.dll
+D:\dev\Orchard\ModuleDev\src\Orchard.WarmupStarter\obj\Debug\Orchard.WarmupStarter.pdb

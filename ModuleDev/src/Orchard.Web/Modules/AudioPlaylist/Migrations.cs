@@ -10,6 +10,7 @@ using Orchard.Core.Contents.Extensions;
 using Orchard.Core.Navigation.Models;
 using Orchard.Core.Title.Models;
 using Orchard.Data.Migration;
+using Orchard.Autoroute.Models;
 
 namespace AudioPlaylist {
     public class Migrations : DataMigrationImpl {
@@ -19,8 +20,6 @@ namespace AudioPlaylist {
             ContentDefinitionManager.AlterPartDefinition("Audio", part => part
                  .WithField("Mp3File", field => field.OfType("TextField"))
                  .WithField("OggFile", field => field.OfType("TextField"))
-                 .WithField("Length", field => field.OfType("NumericField"))
-                 .WithField("SequenceNumber", field => field.OfType("NumericField"))
                  .Attachable()
                  );
             
@@ -43,6 +42,7 @@ namespace AudioPlaylist {
                .WithPart(typeof(MenuPart).Name)
                .WithPart(typeof(AdminMenuPart).Name)
                .WithPart(typeof(TitlePart).Name)
+               .WithPart(typeof(AutoroutePart).Name)
                .Creatable()
                );
 

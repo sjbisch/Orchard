@@ -1,11 +1,9 @@
 Name: AudioPlaylist
-Category: Media
 AntiForgery: enabled
-Author: Steve Bischof
+Author: Steve Bischo
 Website: http://orchardproject.net
 Version: 1.0
-OrchardVersion: 1.0
-Description: Creates audio playlists
-Features:
-    AudioPlaylist:
-        Description: Description for feature AudioPlaylist.
+OrchardVersion: 1.4.1
+Description: Creates audio playlists with JPlayer
+Dependencies: Orchard.Autoroute
+Category: Media

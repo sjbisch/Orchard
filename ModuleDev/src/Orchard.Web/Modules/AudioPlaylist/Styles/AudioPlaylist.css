@@ -17,3 +17,18 @@
 {
 	list-style-type:none;
 }
+
+.lyricsdiv p
+{
+	line-height:50%;
+}
+
+.item_time
+{
+	display:none;
+}
+
+.jplayer_playlist_current .item_time
+{
+	display:inline;
+}

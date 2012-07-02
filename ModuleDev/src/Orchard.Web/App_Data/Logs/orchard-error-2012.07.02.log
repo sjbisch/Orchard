@@ -1,0 +1,169 @@
+2012-07-02 15:28:19,888 [10] Orchard.Exceptions.DefaultExceptionPolicy - An unexpected exception was caught
+System.AggregateException: One or more errors occurred. ---> System.Xml.XmlException: The '=' character, hexadecimal value 0x3D, cannot be included in a name. Line 3, position 24.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   at System.Xml.XmlTextReaderImpl.Throw(Int32 pos, String res, String[] args)
+   at System.Xml.XmlTextReaderImpl.ParseElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XElement.ReadElementFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XElement.Load(XmlReader reader, LoadOptions options)
+   at System.Xml.Linq.XElement.Parse(String text, LoadOptions options)
+   at System.Xml.Linq.XElement.Parse(String text)
+   at Orchard.DisplayManagement.Descriptors.ShapePlacementStrategy.PlacementFileParser.ParseImplementation(String virtualPath, String placementText) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\ShapePlacementStrategy\PlacementFileParser.cs:line 39
+   at Orchard.DisplayManagement.Descriptors.ShapePlacementStrategy.PlacementFileParser.<>c__DisplayClass1.<Parse>b__0(AcquireContext`1 context) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\ShapePlacementStrategy\PlacementFileParser.cs:line 30
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.UpdateEntry(CacheEntry currentEntry, TKey k, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 33
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__1(TKey k, CacheEntry currentEntry) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 21
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Orchard.DisplayManagement.Descriptors.ShapePlacementStrategy.PlacementFileParser.Parse(String virtualPath) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\ShapePlacementStrategy\PlacementFileParser.cs:line 27
+   at Orchard.DisplayManagement.Descriptors.ShapePlacementStrategy.ShapePlacementParsingStrategy.ProcessFeatureDescriptor(ShapeTableBuilder builder, FeatureDescriptor featureDescriptor) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\ShapePlacementStrategy\ShapePlacementParsingStrategy.cs:line 43
+   at Orchard.DisplayManagement.Descriptors.ShapePlacementStrategy.ShapePlacementParsingStrategy.Discover(ShapeTableBuilder builder) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\ShapePlacementStrategy\ShapePlacementParsingStrategy.cs:line 36
+   at Orchard.DisplayManagement.Descriptors.DefaultShapeTableManager.<>c__DisplayClassf.<GetShapeTable>b__4(Meta`1 bindingStrategy) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\DefaultShapeTableManager.cs:line 44
+   at Orchard.Caching.DefaultParallelCacheContext.<>c__DisplayClass5`2.<>c__DisplayClass7.<RunInParallel>b__1() in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\DefaultParallelCacheContext.cs:line 24
+   at Orchard.Caching.DefaultParallelCacheContext.TaskWithAcquireContext`1.Execute() in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\DefaultParallelCacheContext.cs:line 71
+   at Orchard.Caching.DefaultParallelCacheContext.<RunInParallel>b__2[T,TResult](ITask`1 task) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\DefaultParallelCacheContext.cs:line 30
+   at System.Linq.Parallel.SelectQueryOperator`2.SelectQueryOperatorResults.GetElement(Int32 index)
+   at System.Linq.Parallel.ArrayMergeHelper`1.ToArrayElement(Int32 index)
+   at System.Linq.Parallel.ForAllOperator`1.ForAllEnumerator`1.MoveNext(TInput& currentElement, Int32& currentKey)
+   at System.Linq.Parallel.ForAllSpoolingTask`2.SpoolingWork()
+   at System.Linq.Parallel.SpoolingTaskBase.Work()
+   at System.Linq.Parallel.QueryTask.BaseWork(Object unused)
+   at System.Linq.Parallel.QueryTask.RunTaskSynchronously(Object o)
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+   at System.Linq.Parallel.QueryTaskGroupState.QueryEnd(Boolean userInitiatedDispose)
+   at System.Linq.Parallel.SpoolingTask.SpoolForAll[TInputOutput,TIgnoreKey](QueryTaskGroupState groupState, PartitionedStream`2 partitions, TaskScheduler taskScheduler)
+   at System.Linq.Parallel.DefaultMergeHelper`2.System.Linq.Parallel.IMergeHelper<TInputOutput>.Execute()
+   at System.Linq.Parallel.MergeExecutor`1.Execute[TKey](PartitionedStream`2 partitions, Boolean ignoreOutput, ParallelMergeOptions options, TaskScheduler taskScheduler, Boolean isOrdered, CancellationState cancellationState, Int32 queryId)
+   at System.Linq.Parallel.PartitionedStreamMerger`1.Receive[TKey](PartitionedStream`2 partitionedStream)
+   at System.Linq.Parallel.ForAllOperator`1.WrapPartitionedStream[TKey](PartitionedStream`2 inputStream, IPartitionedStreamRecipient`1 recipient, Boolean preferStriping, QuerySettings settings)
+   at System.Linq.Parallel.UnaryQueryOperator`2.UnaryQueryOperatorResults.ChildResultsRecipient.Receive[TKey](PartitionedStream`2 inputStream)
+   at System.Linq.Parallel.ScanQueryOperator`1.ScanEnumerableQueryOperatorResults.GivePartitionedStream(IPartitionedStreamRecipient`1 recipient)
+   at System.Linq.Parallel.UnaryQueryOperator`2.UnaryQueryOperatorResults.GivePartitionedStream(IPartitionedStreamRecipient`1 recipient)
+   at System.Linq.Parallel.QueryOperator`1.GetOpenedEnumerator(Nullable`1 mergeOptions, Boolean suppressOrder, Boolean forEffect, QuerySettings querySettings)
+   at System.Linq.Parallel.ForAllOperator`1.RunSynchronously()
+   at System.Linq.ParallelEnumerable.ForAll[TSource](ParallelQuery`1 source, Action`1 action)
+   at System.Linq.Parallel.ArrayMergeHelper`1.Execute()
+   at System.Linq.Parallel.QueryOperator`1.ExecuteAndGetResultsAsArray()
+   at System.Linq.ParallelEnumerable.ToArray[TSource](ParallelQuery`1 source)
+   at Orchard.Caching.DefaultParallelCacheContext.RunInParallel[T,TResult](IEnumerable`1 source, Func`2 selector) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\DefaultParallelCacheContext.cs:line 27
+   at Orchard.DisplayManagement.Descriptors.DefaultShapeTableManager.<>c__DisplayClassf.<GetShapeTable>b__3(AcquireContext`1 x) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\DefaultShapeTableManager.cs:line 38
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.UpdateEntry(CacheEntry currentEntry, TKey k, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 33
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__1(TKey k, CacheEntry currentEntry) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 21
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Orchard.DisplayManagement.Descriptors.DefaultShapeTableManager.GetShapeTable(String themeName) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\DefaultShapeTableManager.cs:line 35
+   at Orchard.DisplayManagement.Descriptors.ShapeTableLocator.<>c__DisplayClass1.<Lookup>b__0(String _) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\ShapeTableLocator.cs:line 28
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.DisplayManagement.Descriptors.ShapeTableLocator.Lookup(String themeName) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\ShapeTableLocator.cs:line 28
+   at Orchard.DisplayManagement.Implementation.DefaultShapeFactory.Create(String shapeType, INamedEnumerable`1 parameters, IEnumerable`1 behaviors) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Implementation\DefaultShapeFactory.cs:line 33
+   at Orchard.ContentManagement.DefaultContentDisplay.CreateItemShape(String actualShapeType) in d:\dev\Orchard\ModuleDev\src\Orchard\ContentManagement\DefaultContentDisplay.cs:line 103
+   at Orchard.ContentManagement.DefaultContentDisplay.BuildDisplay(IContent content, String displayType, String groupId) in d:\dev\Orchard\ModuleDev\src\Orchard\ContentManagement\DefaultContentDisplay.cs:line 52
+   at Orchard.ContentManagement.DefaultContentManager.BuildDisplay(IContent content, String displayType, String groupId) in d:\dev\Orchard\ModuleDev\src\Orchard\ContentManagement\DefaultContentManager.cs:line 524
+   at Orchard.Core.Containers.Controllers.ItemController.Display(Int32 id, PagerParameters pagerParameters) in d:\dev\Orchard\ModuleDev\src\Orchard.Web\Core\Containers\Controllers\ItemController.cs:line 49
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+---> (Inner Exception #0) System.Xml.XmlException: The '=' character, hexadecimal value 0x3D, cannot be included in a name. Line 3, position 24.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   at System.Xml.XmlTextReaderImpl.Throw(Int32 pos, String res, String[] args)
+   at System.Xml.XmlTextReaderImpl.ParseElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XElement.ReadElementFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XElement.Load(XmlReader reader, LoadOptions options)
+   at System.Xml.Linq.XElement.Parse(String text, LoadOptions options)
+   at System.Xml.Linq.XElement.Parse(String text)
+   at Orchard.DisplayManagement.Descriptors.ShapePlacementStrategy.PlacementFileParser.ParseImplementation(String virtualPath, String placementText) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\ShapePlacementStrategy\PlacementFileParser.cs:line 39
+   at Orchard.DisplayManagement.Descriptors.ShapePlacementStrategy.PlacementFileParser.<>c__DisplayClass1.<Parse>b__0(AcquireContext`1 context) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\ShapePlacementStrategy\PlacementFileParser.cs:line 30
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.UpdateEntry(CacheEntry currentEntry, TKey k, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 33
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__1(TKey k, CacheEntry currentEntry) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 21
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Orchard.DisplayManagement.Descriptors.ShapePlacementStrategy.PlacementFileParser.Parse(String virtualPath) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\ShapePlacementStrategy\PlacementFileParser.cs:line 27
+   at Orchard.DisplayManagement.Descriptors.ShapePlacementStrategy.ShapePlacementParsingStrategy.ProcessFeatureDescriptor(ShapeTableBuilder builder, FeatureDescriptor featureDescriptor) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\ShapePlacementStrategy\ShapePlacementParsingStrategy.cs:line 43
+   at Orchard.DisplayManagement.Descriptors.ShapePlacementStrategy.ShapePlacementParsingStrategy.Discover(ShapeTableBuilder builder) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\ShapePlacementStrategy\ShapePlacementParsingStrategy.cs:line 36
+   at Orchard.DisplayManagement.Descriptors.DefaultShapeTableManager.<>c__DisplayClassf.<GetShapeTable>b__4(Meta`1 bindingStrategy) in d:\dev\Orchard\ModuleDev\src\Orchard\DisplayManagement\Descriptors\DefaultShapeTableManager.cs:line 44
+   at Orchard.Caching.DefaultParallelCacheContext.<>c__DisplayClass5`2.<>c__DisplayClass7.<RunInParallel>b__1() in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\DefaultParallelCacheContext.cs:line 24
+   at Orchard.Caching.DefaultParallelCacheContext.TaskWithAcquireContext`1.Execute() in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\DefaultParallelCacheContext.cs:line 71
+   at Orchard.Caching.DefaultParallelCacheContext.<RunInParallel>b__2[T,TResult](ITask`1 task) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\DefaultParallelCacheContext.cs:line 30
+   at System.Linq.Parallel.SelectQueryOperator`2.SelectQueryOperatorResults.GetElement(Int32 index)
+   at System.Linq.Parallel.ArrayMergeHelper`1.ToArrayElement(Int32 index)
+   at System.Linq.Parallel.ForAllOperator`1.ForAllEnumerator`1.MoveNext(TInput& currentElement, Int32& currentKey)
+   at System.Linq.Parallel.ForAllSpoolingTask`2.SpoolingWork()
+   at System.Linq.Parallel.SpoolingTaskBase.Work()
+   at System.Linq.Parallel.QueryTask.BaseWork(Object unused)
+   at System.Linq.Parallel.QueryTask.RunTaskSynchronously(Object o)
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()<---
+
+2012-07-02 16:42:10,114 [13] Orchard.Environment.Extensions.Folders.ExtensionHarvester - The module 'AudioPlaylist' could not be loaded. It was ignored.
+System.ArgumentException: The line Dependencies: Orchard.Autoroute in manifest for extension AudioPlaylist was ignored
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.GetFeaturesForExtension(IDictionary`2 manifest, ExtensionDescriptor extensionDescriptor) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 295
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.GetDescriptorForExtension(String locationPath, String extensionId, String extensionType, String manifestText) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 121
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.<>c__DisplayClassa.<GetExtensionDescriptor>b__9(AcquireContext`1 context) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 139
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.UpdateEntry(CacheEntry currentEntry, TKey k, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 33
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__1(TKey k, CacheEntry currentEntry) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 21
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.GetExtensionDescriptor(String locationPath, String extensionId, String extensionType, String manifestPath, Boolean manifestIsOptional) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 127
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.AvailableExtensionsInFolder(String path, String extensionType, String manifestName, Boolean manifestIsOptional) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 70
+2012-07-02 16:42:10,134 [5] Orchard.Environment.Extensions.Folders.ExtensionHarvester - The module 'AudioPlaylist' could not be loaded. It was ignored.
+System.ArgumentException: The line Dependencies: Orchard.Autoroute in manifest for extension AudioPlaylist was ignored
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.GetFeaturesForExtension(IDictionary`2 manifest, ExtensionDescriptor extensionDescriptor) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 295
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.GetDescriptorForExtension(String locationPath, String extensionId, String extensionType, String manifestText) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 121
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.<>c__DisplayClassa.<GetExtensionDescriptor>b__9(AcquireContext`1 context) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 139
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.UpdateEntry(CacheEntry currentEntry, TKey k, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 33
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__1(TKey k, CacheEntry currentEntry) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 21
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.GetExtensionDescriptor(String locationPath, String extensionId, String extensionType, String manifestPath, Boolean manifestIsOptional) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 127
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.AvailableExtensionsInFolder(String path, String extensionType, String manifestName, Boolean manifestIsOptional) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 70
+2012-07-02 16:42:12,683 [16] Orchard.Environment.Extensions.Folders.ExtensionHarvester - The module 'AudioPlaylist' could not be loaded. It was ignored.
+System.ArgumentException: The line Dependencies: Orchard.Autoroute in manifest for extension AudioPlaylist was ignored
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.GetFeaturesForExtension(IDictionary`2 manifest, ExtensionDescriptor extensionDescriptor) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 295
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.GetDescriptorForExtension(String locationPath, String extensionId, String extensionType, String manifestText) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 121
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.<>c__DisplayClassa.<GetExtensionDescriptor>b__9(AcquireContext`1 context) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 139
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.AddEntry(TKey k, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 27
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in d:\dev\Orchard\ModuleDev\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.GetExtensionDescriptor(String locationPath, String extensionId, String extensionType, String manifestPath, Boolean manifestIsOptional) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 127
+   at Orchard.Environment.Extensions.Folders.ExtensionHarvester.AvailableExtensionsInFolder(String path, String extensionType, String manifestName, Boolean manifestIsOptional) in d:\dev\Orchard\ModuleDev\src\Orchard\Environment\Extensions\Folders\ExtensionHarvester.cs:line 70
+2012-07-02 18:19:13,513 [10] NHibernate.AdoNet.AbstractBatcher - Could not execute query: SELECT this_.Id as Id11_0_, this_.SerialNumber as SerialNu2_11_0_ FROM Settings_ShellDescriptorRecord this_ WHERE 1=1
+System.Data.SqlServerCe.SqlCeException (0x80004005): The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+   at System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   at System.Data.SqlServerCe.SqlCeCommand.CompileQueryPlan()
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlServerCe.SqlCeCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2012-07-02 18:19:13,542 [10] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]
+2012-07-02 18:19:13,563 [10] NHibernate.Util.ADOExceptionReporter - The specified table does not exist. [ Settings_ShellDescriptorRecord ]

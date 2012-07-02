@@ -21,7 +21,7 @@
 
 <div id="audiocontainer">
     <div id="jquery_jplayer" style="position: absolute; top: 0px; left: -9999px; "></div>
-    <a id="playbutton" href="#">Play</a>
+    <a id="jplayer_play" href="#">Play</a>
 
 
     <div id="jplayer_playlist" class="jp-playlist">
@@ -30,11 +30,13 @@
         @foreach (var item in items)
         {
             <li>
-                <a href="#" id="jplayer_playlist_item_@index" class="jplayer_playlist_item"
+                <a href="#" id="jplayer_playlist_item_@(index)" class="jplayer_playlist_item"
                     data-index="@index"
                     data-mp3_file="@item.ContentItem.Parts[6].Fields[0].Value" 
                     data-ogg_file="@item.ContentItem.Parts[6].Fields[1].Value">@item.ContentItem.TitlePart.Title</a>
-
+                <span class="item_time">
+                    ( <span id="jplayer_playlist_item_@(index)_current_time" >0:00</span>/<span id="jplayer_playlist_item_@(index)_duration" >0:00</span> )
+                </span>
                 <span class="audiolinks">
                     <div class="lyricsdiv" style="display:none;">@Html.Raw(item.ContentItem.BodyPart.Text)</div>
                     <a href="#" class="lyricslink">Lyrics</a>

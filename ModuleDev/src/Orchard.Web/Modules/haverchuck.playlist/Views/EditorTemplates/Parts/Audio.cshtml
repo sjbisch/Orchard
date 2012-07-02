@@ -1,0 +1,16 @@
+﻿@model haverchuck.playlist.Models.AudioPart
+<fieldset>
+    <legend>Audio Fields</legend>
+ 
+    <div class="editor-label">@Html.LabelFor(x => x.Length)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.Length)
+        @Html.ValidationMessageFor(x => x.Length)
+    </div>
+ 
+    <div class="editor-label">@Html.LabelFor(x => x.File)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.File)
+        @Html.ValidationMessageFor(x => x.File)
+    </div>
+</fieldset>

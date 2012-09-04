@@ -10,7 +10,7 @@
     <ExtensionId>AudioPlaylist</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/AudioPlaylist/bin/AudioPlaylist.dll</VirtualPath>
-    <Hash>24f302a0460d0f4a</Hash>
+    <Hash>24f30e6f056e558a</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>haverchuck.playlist</ExtensionId>

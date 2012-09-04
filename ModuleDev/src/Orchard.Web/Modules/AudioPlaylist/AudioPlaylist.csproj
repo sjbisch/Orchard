@@ -93,12 +93,6 @@
     <Compile Include="ResourceManifest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\~Content-Playlist.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\~Content-Audio.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>

@@ -3,9 +3,18 @@
 	float: left;
 }
 
-#audiocontainter
+#audiocontainer
 {
-	float: right;
+	width: 500px;
+	margin-left: 300px;
+}
+
+#jplayer_play
+{
+	border-width: 1px;
+	border-style: solid;
+	padding: 1px 6px 1px 6px;
+	margin-bottom: 20px;
 }
 
 .audiolinks
@@ -13,14 +22,33 @@
 	float:right;
 }
 
-.jp-playlist ul
+.jp-playlist > ul
 {
 	list-style-type:none;
+	margin: 0 0 0 0;
+}
+
+.jp-playlist > ul li
+{
+	list-style-type:none;
+	margin: 0 0 0 0;
+	
+}
+
+#audiocontainer a:hover, #audiocontainer a:active 
+{ 
+	color: #ab8666; 
 }
 
 .lyricsdiv p
 {
-	line-height:50%;
+	line-height:100%;
+	margin: 0 0 0 0;
+}
+
+.lyricslink
+{
+	margin-right: 15px;
 }
 
 .item_time

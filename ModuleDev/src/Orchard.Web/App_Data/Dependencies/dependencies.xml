@@ -534,6 +534,12 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>TheOtherSide</ModuleName>
+    <VirtualPath>~/Theme/TheOtherSide</VirtualPath>
+    <LoaderName>RawThemeExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>TheThemeMachine</ModuleName>
     <VirtualPath>~/Theme/TheThemeMachine</VirtualPath>
     <LoaderName>RawThemeExtensionLoader</LoaderName>
